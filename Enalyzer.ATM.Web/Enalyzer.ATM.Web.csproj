@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Enalyzer.ATM.Common\Enalyzer.ATM.Common.csproj" />
+    <ProjectReference Include="..\Enalyzer.ATM.Core\Enalyzer.ATM.Core.csproj" />
+    <ProjectReference Include="..\Enalyzer.ATM.Infrastructure\Enalyzer.ATM.Infrastructure.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>

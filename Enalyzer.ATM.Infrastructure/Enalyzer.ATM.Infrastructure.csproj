@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Enalyzer.ATM.Core\Enalyzer.ATM.Core.csproj" />
+    <ProjectReference Include="..\Enalyzer.ATM.Domain\Enalyzer.ATM.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

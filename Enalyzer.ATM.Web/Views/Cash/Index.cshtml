@@ -1,0 +1,23 @@
+﻿@model WithdrawViewModel;
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Cash Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    <form id="cashForm" method="post" asp-action="Withdraw" asp-controller="Cash">
+
+        <h4 class="form-block-title">Select amount</h4>
+
+        <div class="input-block">
+            <input asp-for="@Model.Amount" type="number" step="1" min="1" placeholder="500" required />
+        </div>
+
+        <button type="submit" class="btn">
+            Submit
+        </button>
+    </form>
+</div>

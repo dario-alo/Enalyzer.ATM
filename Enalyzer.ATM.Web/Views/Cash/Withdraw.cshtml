@@ -1,0 +1,27 @@
+﻿@model IEnumerable<CashViewModel>
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Pickup Page";
+}
+
+<div class="pickup">
+    <h1 class="pickup-title">Depositing</h1>
+
+    <div class="pickup-grid">
+        @foreach (var box in Model.GroupBy(x => x.BoxType).OrderBy(x => x.Key))
+        {
+            <div class="pickup-grid-group">
+                @foreach (var item in box.GroupBy(x => x.Value))
+                {
+                    <p>@item.Count() x @item.Key</p>
+                }
+            </div>
+        }
+    </div>
+
+    <h4 class="pickup-subtitle">
+        Thank you for using<br />
+        Enalyzer ATM
+    </h4>
+</div>
