@@ -13,7 +13,7 @@
         <h4 class="form-block-title">Select amount</h4>
 
         <div class="input-block">
-            <input asp-for="@Model.Amount" type="number" step="1" min="1" placeholder="500" required />
+            <input asp-for="@Model.Amount" type="number" step="1" min="1" max="@int.MaxValue" placeholder="500" required />
         </div>
 
         <button type="submit" class="btn">
